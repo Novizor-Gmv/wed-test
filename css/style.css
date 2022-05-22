@@ -1,0 +1,531 @@
+/*Обнуление*/
+	*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+	*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+	:focus,:active{outline: none;}
+	a:focus,a:active{outline: none;}
+
+	nav,footer,header,aside{display: block;}
+
+	html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	}
+	input,button,textarea{font-family:inherit;}
+
+	input::-ms-clear{display: none;}
+	button{cursor: pointer;}
+	button::-moz-focus-inner {padding:0;border:0;}
+	a, a:visited{text-decoration: none;}
+	a:hover{text-decoration: none;}
+	ul li{list-style: none;}
+	img{vertical-align: top;}
+
+	h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.header {
+	font-size: 50px;
+	text-align: center; 
+	border: 5px solid#000000FF; 
+	padding: 10px ; 
+	margin: 10px;
+	}
+
+.zagolovok_3tipa {
+	font-size: 30px;
+	Font-weight: 700;
+	text-align: center;
+	color: #09F;
+	line-height: 2;
+	margin: 10px;
+
+}
+
+.sillka {
+	font-size: 25px;
+	color: #F00;
+}
+
+
+.zagolovok_4tipa {
+	font-size: 25px;
+	text-indent: 15px;
+	padding: 10px;/* отступы внутренние */
+}
+
+
+/*.span {
+	font-size: 17px;
+	Font-weight: 700;
+	color: #44B;
+}*/
+
+
+.bloc {
+	border: 1px solid#000C51FF;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Устанавливает семейство шрифтов, в данном примере шрифт ARIAL*/
+	.Font-family {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+/**/	
+
+/* font-size - определяет размер шрифта, по умолчанию всегда стоит 14 как указанно в обнуляющей стиле */
+	.px10 {
+		font-size: 10px;
+	}
+	.px15 {
+		font-size: 15px;
+	}
+	.px20 {
+		font-size: 20px;
+	}
+	.px25 {
+		font-size: 25px;
+	}
+/*Font-style - определяет начертание шрифта обычный, курсивный, наклонный*/
+
+	.normal {
+		font-style: normal;
+	}
+	.italic {
+		font-style: italic;
+	}
+	.oblique {
+		font-style: oblique;
+	}
+	.inherit {
+		font-style: inherit;
+	}	
+
+/*Font-weight - устанавливает насыщеность шрифта от 100 до 900 , по умолчанию стоит 400*/
+
+	.px100 {
+		font-weight: 100;
+	}
+	.px200 {
+		font-weight: 200;
+	}
+	.px300 {
+		font-weight: 300;
+	}
+	.px400 {
+		font-weight: 400;
+	}
+	.px500 {
+		font-weight: 500;
+	}
+	.px600 {
+		font-weight: 600;
+	}
+	.px700 {
+		font-weight: 700;
+	}
+	.px800 {
+		font-weight: 800;
+	}
+	.px900 {
+		font-weight: 900;
+	}
+/**/
+
+/*Color - цвет текста*/
+	.red {
+		color: #F00;
+	}
+	.blue {
+		color: #02F;
+	}
+	.pink {
+		color: #FF00DCFF;
+	}
+	.green {
+		color: #00FF21FF;
+	}
+	.grey {
+		color: #808080FF;
+	}
+/**/	
+
+/* text-aling определяет горизонтальное выравнивание текста */
+	.text_aling {
+		text-align: right; /*выравнивание по правому краю*/
+		text-align: center; /*выравнивание по центру*/
+		text-align: justify; /*занимает всю ширену пространства*/
+		text-align-last: left; /*выравнивание по левому краю стандартное значение*/
+	}
+/**/
+
+/*Text-decoration - декарирует текст линиями , под текстом, над текстом , перечеркнутый текст*/	
+	.underline {
+		text-decoration: underline; /* подчеркивает текст*/
+	}
+	.overline {
+		text-decoration: overline; /*подчеркивает текст сверху*/
+	}
+	.line-through {
+		text-decoration: line-through; /*зачеркивает текст*/
+	}
+	.none {
+		text-decoration: none; /*none; уберет любой эффект*/
+	}
+/**/
+
+/*Text-shadow - добавляет тень тексту*/
+	.text_shadow {
+		text-shadow: 1px 2px 3px #E5193BFF;
+	}
+/**/
+
+
+/*text-transform - управляет преобразованием текста в заглавные или прописные символы*/
+
+	.text_transform1 {
+		text-transform: capitalize; /*делает каждый первый символ текста заглавным*/
+	}
+	.text_transform2 {
+		text-transform: lowercase; /*все символы становяться прописными, все символы в нижний регистр */
+	}
+	.text_transform3 {
+	text-transform: uppercase; /* Все символы в  верхний регистр */
+	}
+	.text_transform4 {
+		text-transform: none; /* возвращает в стандартное  */
+	}
+/**/
+
+
+/*text-indent - Применяется для задавания красной строки / отсут от левого края*/
+	.indent {
+		text-indent: 50px;
+	}
+/**/
+
+/*Letter-spacing - определяет интервал между символами */
+	.spacing {
+		letter-spacing: 10px;
+	}
+/**/
+
+/*word-spacing - устанавливает интервал между словами*/
+	.word {
+		word-spacing: 15px;
+	}
+/**/
+
+/*white-space управляет свойствами пробелов между словами растягивает строку что бы не переносить */
+
+
+/*line-height устанавливает межстрочный интервал текста , по умолчанию стоит единица как и указанно в  обнулении */
+	.line_height {
+		line-height: 20px;
+	}
+/**/
+
+
+/*Padding - внутренний отступ блочных тегов, нельзя в применять отрецательные значения*/
+	.Padding_bloc {
+		padding: 10px 20px 30px 40px;
+		border: 3px solid #0026FFFF; 
+	}
+/**/
+
+
+/*margin - внешние отступы блочных тегов возможно применять отрецательные значения   */
+	.margim_bloc {
+		margin: 10px; /*сразу применяет отсутпы к 4 сторона , два значения применять отсутпы с права и лева , снизу и сверху*/
+		border: 3px solid #0026FFFF; 
+	}
+/**/
+
+/*width - устанавливает ширину блочных тегов и img* можно изменять в PX и %*/
+	.width_bloc {
+		border: 4px solid #0026FFFF; 
+		width: 700px;
+		text-align: center;
+	}
+/**/
+
+/*max-width - устанавливает максимальную ширину блочных тегов , ограничитель ширины блоков*/
+	.max_width_bloc {
+		border: 3px solid#0026FFFF;
+		max-width: 500px;
+	}
+/**/
+
+/*min-width - устанавливает минимальную ширину блочных тегов , ограничитель ширины блоков*/
+	.min_width_bloc {
+		min-width: 600px;
+		border: 3px solid#0026FFFF;
+	}
+/**/			
+
+.img {
+	border: 3px solid#0026FFFF;
+	width: 100%;  /*Ширина картинки,*/
+	max-width: 200px;  /*Растягивает картинку на 400px*/
+	min-width: 200px;  /*Не дает уменьшить картинку ниже 200px*/
+}
+
+/*height - устанавливает высоту блочных тегов*/
+	.height_bloc {
+		height: 80px;
+		border: 3px solid#0026FFFF;
+	}
+/*max-height - устанавливает максимальную высоту блочных тегов, ограничивает высоту блока*/
+	.max_height_bloc {
+		max-height: 30px;
+		border: 3px solid#0026FFFF;
+	}
+
+/**/
+/*min-height - устанавливает минимальную высоту блочных тегов,*/
+	.min_height_bloc {
+		min-height: 100px;
+		border: 3px solid#0026FFFF;
+}
+/*overflow управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров.*/
+	.overflow_visible {
+		border: 3px solid#0026FFFF; 
+		max-height: 50px;
+		overflow: visible; /*Отображает все водержимое, если не поместилось в блок вылезит за него */
+	}
+
+	.overflow_hidden {
+		border: 3px solid#0026FFFF; 
+		max-height: 43px;
+		overflow: hidden;  /* Отображается только область внутри элемента, остальное будет скрыто.*/
+	}
+	.overflow_scroll {
+		border: 3px solid#0026FFFF; 
+		max-height: 75px;
+		overflow: scroll;  /*Всегда добавляются полосы прокрутки.Даже если они не нужны*/
+	}
+
+	.overflow_auto {
+		border: 3px solid#0026FFFF; 
+		max-height: 100px;
+		overflow: auto; /*Добавляет скролл если он только необходим*/
+	}
+/**/
+
+
+
+
+/**/
+
+
+.example_bloc {
+	font-size: 20px; 
+	margin: 10px;
+	padding: 10px;
+	border: 3px solid#5765A7FF;
+}
+.example_bloc1 {
+	font-size: 20px; 
+	margin: 10px;
+	padding: 10px;
+	border: 3px dotted#5765A7FF;
+}
+
+.example_bloc2 {
+	font-size: 20px; 
+	margin: 10px;
+	padding: 10px;
+	border: 3px dashed;#5765A7FF;
+}
+
+
+.example_strong {
+	font-size: 20px;
+	margin: 10px;
+	padding: 10px; 
+
+}
+
+.example_img {}
+
+.hp {
+	font-size: 20px;
+	color: #760;
+	margin: 5px;
+	padding: 5px;
+}
+
+.spisok {
+	font-size: 18px;
+	margin: 10px;
+}
+/**/
+
+.example_bloc3 {
+	border: 3px solid#0026FF;  
+	border-radius: 25px 25px 25px 25px; 
+}
+
+/*outline - внешняя граница блока*/
+	.example_bloc4 {
+		outline: 5px solid#DD2191FF;  
+
+	}
+
+/*box-shadow - добавляет тень к блоку */	
+	.example_bloc5 {
+		box-shadow: 5px 10px 15px 10px #A057A7FF; 
+		padding: 10px; 
+		margin: 10px;
+		border-radius: 20px;
+
+	}
+/**/
+
+
+/*Opacity - Определяети уровень прозрачности элемента*/
+
+	.Opacity1 {
+		border: 1px solid#000000FF;
+		opacity: 0.1; 
+	}
+	.Opacity2 {
+		border: 1px solid#000000FF;
+		opacity: 0.2; 
+	}
+	.Opacity3 {
+		border: 1px solid#000000FF;
+		opacity: 0.3; 
+	}
+	.Opacity4 {
+		border: 1px solid#000000FF;
+		opacity: 0.4; 
+	}
+	.Opacity5 {
+		border: 1px solid#000000FF;
+		opacity: 0.5; 
+	}
+	.Opacity6 {
+		border: 1px solid#000000FF;
+		opacity: 0.6; 
+	}
+/**/
+
+
+/*visibiliity - предназначен для отображения или скрытия блока*/
+	.example_bloc6 {
+		border: 3px solid#000000FF;
+		visibility: hidden;
+	}
+	.example_bloc7 {
+		border: 3px solid#000000FF;
+		visibility: visible;
+	}
+
+/**/
+
+body {
+	padding: 10px;
+}
+
+/*BACKGROUND  Управляет фоном*/
+	.bloc1 {
+		height: 50px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+		background: #AF4DB1FF ; 
+	}
+	.bloc2 {
+		height: 100px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+		background: url('../img/2.jpg'); 
+	}
+	.bloc3 {
+		/* Old browsers */
+	background: rgb(236,232,157);
+	/* FF3.6-15 */
+	background: -moz-linear-gradient(top, rgba(236,232,157,1) 0%, rgba(94,83,115,1) 50%, rgba(24,181,164,1) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(top, rgba(236,232,157,1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom, rgba(236,232,157,1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);
+	height: 100px;
+	border-radius: 15px; 
+	box-shadow: 0 0 10px #000000FF;
+	margin: 10px;
+	}
+	.bloc4 {
+		background: url('../img/logo10x10.jpg')round; 
+		height: 50px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+	}
+	.bloc5 {
+		background: url('../img/logo10x10.jpg')no-repeat;
+		height: 50px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+	}
+	.bloc6 {
+		background: url('../img/logo10x10.jpg')repeat-x;
+		height: 50px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+	}
+	.bloc7 {
+		background: url('../img/logo10x10.jpg')space;
+		height: 50px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+	}
+	.bloc8 {
+		background: url('../img/logo10x10.jpg')round;
+		height: 50px;
+		border-radius: 15px; 
+		box-shadow: 0 0 10px #000000FF;
+		margin: 10px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

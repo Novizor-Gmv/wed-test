@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Скрип на обновление -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Первый день обучения HTML</title>
+</head>
+<body>
+
+	<!--Шапка сайта-->	
+	<header>
+		<!--содержимое тега Nav - тег отвечающий за навигацию или меню сайта, распологается в теге Header - шапка сайта-->
+		<nav>
+		 	<div class="menu">
+		 		<a href="index.html">1 день обучения HTML</a>
+		 		<a href="two.html">2  день обучения CSS</a>
+		 		<a href="three.html">3 день обучения CSS </a>
+			</div>
+		</nav>
+	</header>
+		<hr size="5px" color='#334'>
+		<div class="header">
+			<h1>Первый день обучения</h1>
+		</div>
+		
+	<!--Контенеры div-->	
+	<div>
+		<div>
+			<b>HTML теги h1, h2, h3, h4, h5, h6</b>  
+			<!--Заголовк H1 Используеться один раз на старницу-->	
+			<h1>Заголовок первого уровня</h1>
+
+			<!--Остальные теги любое количество раз-->
+			<h2>Заголовок второго уровня</h2> 
+			<h3>Заголовок третьего уровня</h3> 
+			<h4>Заголовок четвертого уровня</h4> 
+			<h5>Заголовок пятого уровня</h5> 
+			<h6>Заголовок шестого уровня</h6>
+		</div>	
+			<hr size="5px" color='#334'>
+		<div>
+			<!--Тег р это обзац, каждый тег начинает текст с новой строки-->
+			<h3>Тег P - абзац</h3>
+			<p>Абзац №1 Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Et exercitationem voluptates, possimus, distinctio explicabo porro, atque modi suscipit ullam sapiente iure voluptas obcaecati. Officiis quidem explicabo molestiae maxime, atque dolore labore consectetur rem itaque quis quasi quibusdam beatae, eveniet voluptas fuga quo rerum. Odit expedita, cum voluptatum similique eius quidem.</p>
+			<p>Абзац №2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sequi, rem amet. Et ab numquam molestias nemo eos nostrum alias dolore veritatis atque unde voluptatum sequi cumque delectus dicta est impedit explicabo quas perspiciatis recusandae, saepe deserunt blanditiis enim. Animi facilis inventore harum aspernatur? Inventore, itaque deleniti magnam impedit labore!</p>
+		</div>
+			<hr size="5px" color='#334'>
+		<div>
+			<!--Тег Спан занимает размер блока в зависимости от содержание информации-->
+			<h3>Тег SPAN</h3> - отличается от блочных элементов тем что размер его блока зависит от содержания,так же в тег спан нельзя поместить блочные элементы P, H, Div , но в блочные элементы тег Span поместить можно 
+			<br>Снизу приведен пример что 3 тега Span идут друг за другом и занимают только то пространнство которое необходимо для их текста.<br>
+			<span>10 слов - Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloribus.</span>
+			<span>20 слов - Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Doloribus eum omnis ipsum magni error quasi, repellendus. Id quidem, blanditiis obcaecati?</span>
+			<span>30 слов - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex minus veniam vel nulla cumque nisi dolore minima. Possimus, obcaecati, eos voluptate et libero reprehenderit. Sunt nobis vero deserunt error?</span>
+			
+			
+			<!--Как использовать тег Span-->
+			<p>Способ использования тега <span class="#"> SPAN</span> </p> - Тегу span задается некий класс для изменений содержания текста в css
+		</div>
+			<hr size="5px" color='#334'>
+		<div>
+			<h3>Тег А</h3> Один из самых важных тегов HTMl - ссылка <br>
+			<b><А</b> target="_blank"(Атрибут target со свойством бланк откроет ссылку в новой вкладке) href="Сама ссылка на файл/старницу/картинку/путь файла и т.п" > Тут вписывается текст котороый и будет считаться ссылкой< /<b>А</b>><br>
+			 Пример 	
+			<a target="_blank" href="https://www.google.ru/"> Данная сылка откроет гугл в новом окне</a>	
+		</div>
+			<hr size="5px" color='#334'>
+		<div>
+			<h3>Тег img</h3> предназначен для вставки изображений на страницу - у него есть два обязательных атребута <b>src="" </b> и <b>alt=""</b></p>
+			<b>src=""</b> - это путь к картинки <br>
+			<b>alt=""</b> - Это текст если картинка по какой либо причине не смогла загрузиться<br>
+
+			И несколько атрибутов необязательных: 
+				<ul>
+					<li>align - Определяет как рисунок будет выравниваться по краю и способ обтекания текстом.</li>
+					<li>border - Толщина рамки вокруг изображения.</li>
+					<li>hspace - Горизонтальный отступ от изображения до окружающего контента. </li>
+					<li>ismap - Говорит браузеру, что картинка является серверной картой-изображением.</li>
+					<li>longdesc - Указывает адрес документа, где содержится аннотация к картинке. </li>
+					<li>lowsrc - Адрес изображения низкого качества.</li>
+					<li>vspace -  отступ от изображения до окружающего контента.</li>
+					<li><b>width</b> - Ширина изображения.</li>
+					<li><b>height</b> - Высота изображения.</li>
+					<li>usemap - Ссылка на тег <map>, содержащий координаты для клиентской карты-изображения.Также для этого тега доступны универсальные атрибуты и события.</li>
+				</ul>
+
+			
+			</div>
+
+			<img src="img/logo.jpg" height="300px" width="300px" title="Мой логотип " alt="Мой логотип" />
+		 	<hr size="5px" color='#334'>
+			<div>
+				<h3>Списки</h3>
+				Списки есть двух типов маркированные <b>'ul'</b> и нумерованные <b>'ol'</b> и в них вкладывается тег <b>li</b> который и является элементом списка
+
+				<ul>
+					<li>Первый элемент списка ul в теге Li </li>
+					<li>Второй элемент списка ul в теге Li </li>
+					<li>Третий элемент списка ul в теге Li </li>
+				</ul>
+
+				<ol>
+					<li>Первый элемент списка ol в теге Li </li>
+					<li>Второй элемент списка ol в теге Li </li>
+					<li>Третий элемент списка ol в теге Li </li>
+				</ol>
+			</div>
+
+			<hr size="15px" color='#334'>
+
+			<h2><center>ФОРМЫ ЗАПОЛНЕНИЯ</conter> </h2>
+			<p><b>Form - Оболочка формы</b> - обязательный атребут тега form  ( action="" ) определяет куда полетят данные, некие данные сервера</p>
+			<b>Частые атрибуты Тега Form</b><br>
+			<ul>
+				<li><b>action=""</b> - Адрес сервера</li>
+				<li><b>method=""</b> - Отвечает за метод передачи данных и может иметь два значения 
+					<ol>
+						<li>="get" Который используется по умолчанию - Для малого передачи фалов</li>
+						<li>="post" используется для большой информации </li>
+					</ol>
+				</li>
+				<li><b>enctype</b></li>
+				<li><b>Value</b> - значение данных списка заполнения, которое будет отправлено на сервер или прочитано с помощью скриптов.</li>
+				
+			</ul>
+			<p>но этим занимаются бекенд разработчики и пока мы ставим просто заглушку #</p>
+			<p>А нас интересует интерективные элементы Form, отвечающие за отправку данных </p>
+			<p><b>input</b> Тег является одним из разносторонних элементов формы и позволяет создавать разные элементы интерфейса и обеспечить взаимодействие с пользователем. Главным образом <b>input</b> предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</p>
+			<ul>
+				<li>type= - главный атрибут данного тега , именно он определяет метод приема данных и разберем его знаечния</li>
+					<ul>
+						<li>type="text" - ввод типа данных текст</li>
+						<li>type="password" ввод типа данных как пороль тект будет скрыт </li>
+						<li>type="radio" - выбор данных как напрмиере нажать потверждения чего либо, выбор из одного варианта круглой кнопки </li>
+						<li>type="checkbox" - выбор данных квадратной кнопки и галочек </li>
+						<li>Type="file" - выбр файла для загрузки и следовательно будет отправлен вмесет сформой</li>
+					</ul>
+				<li>mane="" - информируемые данные, имя поля</li>
+				<li>value="" - значение данных для отправки на сервер</li>
+				<li>placeholder="" - полупрозрачный текст который пропадет при вводе данных</li>
+				<li>checked - выставляет выбор radio по умалчанию </li>
+			</ul>
+				
+				<p>Если поле ввода предусматривает ввод цифр, особенно телефоныый номер, то необходимо использользовать значение атрибута type со значением tel ( type="tel") это переключит способ ввода на телефоне в цифровой формат</p>
+			<p>Все поля формы должы быть распаложенны внутри тега form</p>
+			<form action="#" method="post" enctype="multipart/form-data"></form> 
+			
+			<p>Пример <b>type="text"</b> </p>
+			<div>
+				<input type="text" name="username" value="" placeholder="Введите имя " />
+			</div>
+
+
+			<p>Пример <b>type="password"</b> </p>
+			<div>
+				<input type="password" name="userpass" value="" placeholder="Введите пароль " />
+			</div>
+			
+			
+			<p>Пример <b>type="radio"</b> </p>
+			<div>
+				<p><input checked type="radio" name="napitok" value="Coca-cola"/>Coca-cola</p>
+				<p><input type="radio" name="napitok" value="Pepsi"/>Pepsi</p>
+				<p><input type="radio" name="napitok" value="Fanta"/>Fanta</p>
+			</div>
+			<br><!--За счет разных name можно сделать выбор напитка в двух разных блоках один там и один тут -->
+			<div>
+				<p><input checked type="radio" name="napitok2" value="Lipton"/>Lipton</p>
+				<p><input type="radio" name="napitok2" value="Ice"/>Ice</p>
+				<p><input type="radio" name="napitok2" value="Nesti"/>Nesti</p>
+			</div>
+			
+
+			<p>Пример <b>type="checkbox"</b> </p>
+			<div>
+				<p><input type="checkbox" name="nabor1" value="car"/>Если у вас машина</p>
+				<p><input type="checkbox" name="nabor2" value="dom"/>Если у вас квартира</p>
+				<p><input type="checkbox" name="nabor3" value="babe"/>Если у вас дети</p>
+			</div>
+
+
+			<p>Пример <b>type="file"</b> </p>
+			<div>
+				<p><input type="file" name="foto"/></p>
+			</div>
+
+
+			<h3>Тег Textarea - форма ввода</h3>
+			<p>Поле <b>< textarea ></b> представляет собой элемент формы для создания области, в которую можно вводить несколько строк текста.<p>
+			<p>Атребуты тега textarea
+				<ul>
+					<li>name - задает имя поля</li>
+					<li>readonly -устанавливает, что поле не может изменяться пользователем. только для чтения</li>
+					<li>cols - Ширина поля в символах</li>
+					<li>rows - Высота поля в строках текста</li>
+					
+				</ul>
+						<div>
+				<textarea name="text"></textarea>
+			</div>
+
+
+			<h3>Парные теги select и вложенный в него тег option</h3>
+			<p>Тег <b>option</b> определяет отдельные пункты списка, создаваемого с помощью контейнера < select>. Ширина списка определяется самым широким текстом, указанным в теге < option>, а также может изменяться с помощью стилей. Если планируется отправлять данные списка на сервер, то требуется поместить элемент < select > внутрь формы. Это также необходимо, когда к данным списка идет обращение через скрипты.</p>
+			<p>Атрибут selected ставит пункт выбора по умолчанию, как тут стоит чесночный соус</p>
+
+
+			<p>Пример. Выберите соус для пиццы</p>
+			<div>
+				<select name="sauce">
+					<option value="TOMATO_SAUCE">Томатный соус</option>
+					<option selected value="Garlic_Sause">Чесночный соус</option>
+					<option value="Italian_sauce">Итальянский соус</option>
+
+				</select>
+			</div>
+
+
+			<h3>Тег button - кнопка</h3>
+			<p><b>Атрибуты и значения</b></p>
+			<ul>
+				<li>type - определяющий атребут</li>
+					<ul>Значения
+						<li>type="<b>submit</b>" - В этом случае при нажатие кнопки отправиться вся форма на сервер </li> 
+						<li>type="<b>reset</b>" - В этом случае при нажатии наша форма очиститься</li>
+						<li></li>
+					</ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+
+			</ul>
+			Пример
+			
+			<div>
+				<button type="submit">Отправить</button>
+			</div>
+			<div>
+				<button type="reset">Сброс анкеты</button>
+			</div>
+
+			<div>
+				<p>Дополнительные атребуты для форм</p>
+				<ul>
+					<li>placeholder="Введите имя " - полупрозрачный текст который удаляется при активации формы</li>
+					<li>tabindex="Значения по порядку 1/2/3/4/5..." - табуляция при помощи клавиши TAB</li>
+				</ul>
+			</div>
+
+
+<!--ФОРМА ЗАПОЛНЕНИЯ-->
+			<h2><center>Пример формы по коду</center></h3>
+			<hr size="2px" color='#EEE'>
+
+		<form action="#" method="post" enctype="multipart/form-data">
+			<div>
+				<p>Имя</p>
+				<input tabindex="1" type="text" name="username">
+			</div>
+
+			<div>
+				<p>Номер телефона</p>
+				<input tabindex="2" type="tel" name="mobail" value="+7">
+			</div>
+
+			<div>
+				<p>Пароль</p>
+				<input tabindex="3" type="password" name="userpass">
+			</div>
+
+			
+			<div>
+				<p>Пол</p>
+				<div>
+					<input tabindex="4" type="radio" name="gender" value="male">Мужской
+				</div>	
+				<div>
+				<input tabindex="4" type="radio" name="gender" value="famele">Женский
+				</div>
+			</div>
+
+			<div>
+				<p>Средства передвижения</p>
+				<div>
+					<p><input tabindex="5" type="checkbox" name="A" value="yes">Общественный транспорт</p>
+				</div>
+				<div>
+					<p><input tabindex="6" type="checkbox" name="B" value="yes">Мототехника</p>
+				</div>
+				<div>
+					<p><input tabindex="7" type="checkbox" name="C" value="yes">Автомобиль</p>
+				</div>
+				<div>
+		 			<p><input tabindex="8" type="checkbox" name="D" value="yes">Велосипед</p>
+				</div>
+			</div>
+
+			<div>
+				<p>Любимый цвет</p>
+					<select name="color"abindex="9">
+						<option value="FFFFFFFF">Белый цвет</option>
+						<option value="FF000F">Красный цвет</option>
+						<option value="0109FDF">Синий цвет</option>
+					</select>
+			</div>
+
+			<div>
+				<p>Дополнительная информация</p>
+				<textarea tabindex="10" type="text"name="info"></textarea>
+			</div>
+			<div>
+				<p>Прекрепить фото</p>
+				<input tabindex="11" type="file" name="userfoto">
+			</div>
+
+			<div>
+				<p>Действия</p>
+				<button tabindex="12" type="reset">Стиреть данные</button>
+				<button tabindex="13" type="submit">Отправить данные</button>
+			</div>
+		</form>
+
+	</div>
+	<div>
+		
+	</div>
+	<div>
+		
+	</div>
+	<footer>
+		
+	</footer>
+
+
+
+</body>
+</html>
